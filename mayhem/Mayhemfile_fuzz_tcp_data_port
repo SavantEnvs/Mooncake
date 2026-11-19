@@ -1,0 +1,9 @@
+project: savantenvs/Mooncake
+target: fuzz_tcp_data_port
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tcp_data_port/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tcp_data_port
+    libfuzzer: true
+    timeout: 30

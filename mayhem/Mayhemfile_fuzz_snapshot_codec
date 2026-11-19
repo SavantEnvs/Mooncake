@@ -1,0 +1,9 @@
+project: savantenvs/Mooncake
+target: fuzz_snapshot_codec
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_snapshot_codec/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_snapshot_codec
+    libfuzzer: true
+    timeout: 30

@@ -1,0 +1,1 @@
+{"name": "127.0.0.1:12345", "protocol": "tcp", "tcp_data_port": 15000, "tcp_proto_version": 2, "metadata_version": 0, "buffers": [{"name": "cpu:0", "addr": 65536, "length": 4096}], "timestamp": "2026-01-01"}

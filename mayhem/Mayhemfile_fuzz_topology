@@ -1,0 +1,9 @@
+project: savantenvs/Mooncake
+target: fuzz_topology
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_topology/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_topology
+    libfuzzer: true
+    timeout: 30
